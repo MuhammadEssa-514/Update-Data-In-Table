@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Table With Edit Section</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+ <!-- code by Sultan Muhammad Essa-514 -->
+
+    <body>
+
+        <!-- Main Data Table -->
+        <div class="mainTable">
+            <h1>Data</h1>
+            <table id="table" border="1">
+                
+                <tr>
+                    <th>Sno</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Country</th>
+                    <th>Mobile number</th>
+                </tr>
+                
+                <tr>
+                    <td>01</td>
+                    <td>Michael </td>
+                    <td>Davidson</td>
+                    <td>United State</td>
+                    <td>123456789</td>
+                </tr>
+                
+                <tr>
+                    <td>02</td>
+                    <td>Jim </td>
+                    <td>Vito</td>
+                    <td>Thailand</td>
+                    <td>987654321</td>
+                </tr>
+                
+                <tr>
+                    <td>03</td>
+                    <td>Tom </td>
+                    <td>Johnson</td>
+                    <td>France</td>
+                    <td>568925795</td>
+                </tr>
+                
+                <tr>
+                    <td>04</td>
+                    <td>Peter  </td>
+                    <td>Lewis</td>
+                    <td>Germany</td>
+                    <td>437496478</td>
+                </tr>
+                
+                <tr>
+                    <td>05</td>
+                    <td>Edward </td>
+                    <td>Koeing</td>
+                    <td>Argentina</td>
+                    <td>764326899</td>
+                </tr>
+                
+                <tr>
+                    <td>06</td>
+                    <td>Jeck </td>
+                    <td>Preston</td>
+                    <td>Canada</td>
+                    <td>578854268</td>
+                </tr>
+                
+                <tr>
+                    <td>07</td>
+                    <td>David </td>
+                    <td>Smith</td>
+                    <td>Australia</td>
+                    <td>357882579</td>
+                </tr>
+                
+                <tr>
+                    <td>08</td>
+                    <td>Luis </td>
+                    <td>Brown</td>
+                    <td>Irak</td>
+                    <td>468953789</td>
+                </tr>
+                
+                <tr>
+                    <td>09</td>
+                    <td>Thomas </td>
+                    <td>Miller</td>
+                    <td>America</td>
+                    <td>764589537</td>
+                </tr>
+                
+            </table>
+        </div>
+
+
+        <!-- Update Button -->
+        <div class="updateBtn">
+            <button  onclick="editTableDisplay()">Update data</button>
+        </div>
+
+        <!-- Edit table -->
+        <div class="editTable">
+            <div class="left">First Name: </div><div class="right"><input type="text" name="fname" id="fname"></div><br><br>
+            <div class="left">Last Name: </div><div class="right"><input type="text" name="lname" id="lname"></div><br><br>
+            <div class="left">Country: </div><div class="right"><input type="text" name="country" id="country"></div><br><br>
+            <div class="left">Mobile number: </div><div class="right"><input type="number" name="mNumber" id="mNumber"></div><br><br>
+            <button onclick="editRow();" class="editRowBtn">Update</button><br><br>
+        </div>        
+
+        <!-- link JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>
